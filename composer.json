@@ -1,0 +1,62 @@
+{
+    "name": "almesery/laravel-foodics",
+    "description": "This is my package laravel-foodics",
+    "keywords": [
+        "almesery",
+        "laravel",
+        "laravel-foodics"
+    ],
+    "homepage": "https://github.com/almesery/laravel-foodics",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdalrahman Almesery",
+            "email": "almesery599@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "spatie/laravel-package-tools": "^1.14.0",
+        "illuminate/contracts": "^10.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^7.8",
+        "nunomaduro/larastan": "^2.0.1",
+        "orchestra/testbench": "^8.8",
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-arch": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Foodics\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Foodics\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Foodics\\FoodicsServiceProvider"
+            ],
+            "aliases": {
+                "Foodics": "Foodics\\Facades\\Foodics"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
